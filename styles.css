@@ -5,21 +5,21 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f9; }
+    background-color: black; }
     
     .quiz-container {
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     border-radius: 8px;
-    background-color: white; }
+    background-color: darkcyan; }
     
     .button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: lightcoral;
     color: white;
     border: none;
     border-radius: 5px;
@@ -27,3 +27,13 @@ body {
     
     .button:hover {
     background-color: #0056b3; }
+
+    h1 {
+        color:yellowgreen;
+    }
+
+    #question {
+        color:goldenrod;
+        font-weight: bold;
+        font-size: large;
+    }

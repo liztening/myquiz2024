@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ระบบข้อสอบอย่างง่าย</title>
+    <title>ระบบข้อสอบอย่างง่ายมากๆ</title>
     <link rel="stylesheet", href="styles.css">
 </head>
 <body>
     <div class="quiz-container">
-        <h1></h1>
-        <p id="question">PIM ย่อมาจากอะไร ?</p>
-        <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
-        <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
-        <button class="button" onclick="checkAnswer('c')">C) พิม</button>
-        <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
-        <p id="result"></p>
+        <h1>จงตอบคำถามต่อไปนี้ให้ถูกต้อง</h1>
+        <br>
+        <p id="question">1. PIM ย่อมาจากอะไร ?</p>
+        <button class="button" onclick="checkAnswer1('a')">A) พีไอเอ็ม</button>
+        <button class="button" onclick="checkAnswer1('b')">B) ปิ๋ม</button>
+        <button class="button" onclick="checkAnswer1('c')">C) พิม</button>
+        <button class="button" onclick="checkAnswer1('d')">D) ภีม</button>
+        <p id="result1"></p>
+        <br>
+        <p id="question">2. Gosoft เป็นหน่วยงานประเภทใด ?</p>
+        <button class="button" onclick="checkAnswer2('a')">A) บริษัทระดับประเทศ</button>
+        <button class="button" onclick="checkAnswer2('b')">B) บริษัทระดับโลก</button>
+        <button class="button" onclick="checkAnswer2('c')">C) บริษัทระดับจักรวาล</button>
+        <button class="button" onclick="checkAnswer2('d')">D) มูลนิธิไม่แสวงหาผลกำไร</button>
+        <p id="result2"></p>
+        <br>
         </div>
+<script src="script.js"></script>
 </body>
 </html>
