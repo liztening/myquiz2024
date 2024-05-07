@@ -7,7 +7,6 @@ function checkAnswer1(answer1) {
     result.textContent = "ผิด! ลองตอบอีกที";
     result.style.color = 'darkred';
     }
-    return answer1;
     }
 
 function checkAnswer2(answer2) {
@@ -19,15 +18,4 @@ function checkAnswer2(answer2) {
     result.textContent = "ผิด! โลกสวยเกินไปแล้ว";
     result.style.color = 'darkred';
     }
-    return answer2;
     }
-
-let point = answer1 + answer2;
-
-function totalScore(point) {
-    if (point === 'ad') {
-    alert('เกย์วิปลาส');
-    } else {
-    alert('โบ้งหัวแร้ง');   
-    }
-}
