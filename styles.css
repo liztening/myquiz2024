@@ -10,7 +10,7 @@ body {
     .quiz-container {
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 150px;
     border-radius: 8px;
     background-color: darkcyan; }
     
@@ -28,7 +28,7 @@ body {
     .button:hover {
     background-color: #0056b3; }
 
-    h1 {
+    h1,h4 {
         color:yellowgreen;
     }
 
