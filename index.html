@@ -10,14 +10,14 @@
     <div class="quiz-container">
         <h1>จงตอบคำถามต่อไปนี้ให้ถูกต้อง</h1>
         <br>
-        <p id="question">1. PIM ย่อมาจากอะไร ?</p>
+        <p id="question1">1. PIM ย่อมาจากอะไร ?</p>
         <button class="button" onclick="checkAnswer1('a')">A) พีไอเอ็ม</button>
         <button class="button" onclick="checkAnswer1('b')">B) ปิ๋ม</button>
         <button class="button" onclick="checkAnswer1('c')">C) พิม</button>
         <button class="button" onclick="checkAnswer1('d')">D) ภีม</button>
         <p id="result1"></p>
         <br>
-        <p id="question">2. Gosoft เป็นบริษัทประเภทใด ?</p>
+        <p id="question2">2. Gosoft เป็นบริษัทประเภทใด ?</p>
         <button class="button" onclick="checkAnswer2('a')">A) บริษัทระดับประเทศ</button>
         <button class="button" onclick="checkAnswer2('b')">B) บริษัทระดับโลก</button>
         <button class="button" onclick="checkAnswer2('c')">C) บริษัทระดับจักรวาล</button>
@@ -26,7 +26,34 @@
         <br>
         <h4 id="h41">ข้อที่ 1 ยังไม่ได้เลือกคำตอบ</h4>
         <h4 id="h42">ข้อที่ 2 ยังไม่ได้เลือกคำตอบ</h4>
-        </div>
-<script src="script.js" charset="UTF-8"></script>
+    </div>
+
+<script>
+    function checkAnswer1(answer1) {
+        const result = document.getElementById('result1');
+        if (answer1 === 'a') {
+            result.textContent = "ถูกต้อง! PIM ย่อมาจาก PIM";
+            result.style.color = 'lightgreen';
+            document.querySelector('#h41').innerText = "คำถามที่ 1 ถูกต้อง ได้ 1 คะแนน!";
+        } else {
+            result.textContent = "ผิด! ลองตอบอีกที";
+            result.style.color = 'white';
+            document.querySelector('#h41').innerText = "คำถามที่ 1 ยังไม่มีคะแนน";
+        }
+    }
+
+    function checkAnswer2(answer2) {
+        const result = document.getElementById('result2');
+        if (answer2 === 'd') {
+            result.textContent = "ถูกต้อง! Gosoft คือมูลนิธิที่ไม่แสวงหาผลกำไร!";
+            result.style.color = 'lightgreen';
+            document.querySelector('#h42').innerText = "คำถามที่ 2 ถูกต้อง ได้ 1 คะแนน!";
+        } else {
+            result.textContent = "ผิด! โลกสวยเกินไปแล้ว!";
+            result.style.color = 'white';
+            document.querySelector('#h42').innerText = "คำถามที่ 2 ยังไม่มีคะแนน";
+        }
+    }
+</script>
 </body>
 </html>
